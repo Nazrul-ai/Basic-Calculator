@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700');
+
+body {
+    height: 70vh;
+    
+    margin: 0;
+    font-size: 18px;
+    font-family: "Roboto Mono";
+    background: Azure;
+    display :flex;
+    justify-content: center;
+}
+
+#calculator {
+     box-sizing: border-box;
+    margin-top: 10%;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+header {
+    padding: 0%;
+    margin: 0%;
+    height: 15%;
+    width: 50%;
+    background: white;
+    color: black;
+    box-sizing: border-box;
+   
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   
+}
+
+
+header #detail {
+    font-size: 1em;
+}
+
+header #result {
+    font-size: 2em;
+
+}
+
+#result{
+    width: 63%;
+   display: flex;
+   justify-content: space-between;
+
+}
+#acc{
+    width: 26%;
+
+    box-sizing: border-box;
+     margin-left: 15%;
+
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-style: 1.2rm;
+    background-color:#129688
+    
+}
+
+header span {
+    float: left;
+}
+
+main {
+    width: 80%;
+    background-color: black;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: auto;
+}
+#keys{
+   max-width: 50%;
+}
+main button {
+  
+    font-size: 1.2em;
+    font-family: "Roboto Mono";
+    float: left;
+    width: 25%;
+    border: 0;
+    padding: 1em;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    z-index: 1000;
+}
+
+#opp{
+   background-color: gray; 
+}
+main button:active {
+    background:rgb(112, 196, 74);
+    border-radius: 70%;
+    
+}
+#acc:active{
+
+    border-radius: 70%;
+    background-color:rgb(112, 196, 74);
+    
+}
+#opp:active{
+    border-radius: 70%;
+    background-color:rgb(112, 196, 74);
+}
+
+main button:focus {
+    outline: none;
+}
+
+
+
